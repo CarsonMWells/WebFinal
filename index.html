@@ -7,18 +7,26 @@
   </head>
   <body>
     <nav>
-      <ul>
+      <ul class="nav-container">
         <li>
           <a href="index.html">
-            <img src="Logo.png" class="nav-logo" alt="Logo"/>
+            <img src="images/Logo.png" class="nav-logo" alt="Logo"/>
           </a>
         </li>
-        <div class="side-nav">
-          <li><a href="https://www.google.com/maps/search/?api=1&query=1919+Bay+St,+Los+Angeles,+CA+90021">Directions</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Details">FAQs</a></li>
-          <li><a href="#email" >Contact Us</a></li>
-        </div>
+    
+        <li class="side-nav">
+          <ul>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=1919+Bay+St,+Los+Angeles,+CA+90021" target="_blank" rel="noopener noreferrer">Directions</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Details">FAQs</a></li>
+            <li><a href="#email">Contact</a></li>
+            <li class="search-icon">
+              <a href="#" onclick="openSearch()">
+                <img src="images/search.png" alt="Search">
+              </a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
@@ -31,13 +39,13 @@
         <p>Pop-Up Event / Merch Drop<br>“There Goes That Man”<br>Collection + 1-of-1 Pieces</p>
         <a href="#Collection" class="hero-btn">See the Collection</a>
       </div>
-      <img src="Hero.jpg" class="hero-img" alt="Red Hanging Hoodie">
+      <img src="images/Hero.png" class="hero-img" alt="Red Hanging Hoodie">
     </section>
 
     <!-- Details -->
     <section id="Details">
       <video width="644" controls autoplay muted loop >
-        <source src="/videos/warehouse.mp4" class = "Where-Video" type="video/mp4">
+        <source src="videos/warehouse.mp4" class = "Where-Video" type="video/mp4">
       </video>
       <div class="FAQs">
         <h2>What</h2>
@@ -65,33 +73,52 @@
 
       <!-- Shop the Collection -->
       <section id="Collection">
+        <div class="collection-header"><h2> Shop the Collection </h2>
+          <a href="https://selahclothing.co/" target="_blank" rel="noopener noreferrer">
+            <img src="images/RedArrow.png" alt="arrow" class="RedArrow">
+          </a>
+        </div>
+
+        <div class="product-grid">   
 
           <div class="product-card">
-            <img src="images/Hoodie.png" alt="Red Zip Up Hoodie" class="product-image" />
-          
+            <a href="https://selahclothing.co/products/there-goes-that-man-zip-hoodie?_pos=6&_sid=0bb4998f3&_ss=r"
+               target="_blank" rel="noopener noreferrer">
+              <img src="images/Hoodie.png" alt="Red Zip Up Hoodie" class="product-image" />
+            </a>
+        
             <div class="product-info">
               <h3 class="product-title">“There Goes That Man” Zip Hoodie</h3>
               <p class="product-price">$125.00</p>
             </div>
           </div>
-
+        
           <div class="product-card">
-            <img src="images/Hat.png" alt="Aged Dad Hat" class="product-image" />
-          
+            <a href="https://selahclothing.co/products/there-goes-that-man-aged-dad-hat?_pos=3&_sid=0bb4998f3&_ss=r"
+               target="_blank" rel="noopener noreferrer">
+              <img src="images/Hat.png" alt="Aged Dad Hat" class="product-image" />
+            </a>
+        
             <div class="product-info">
               <h3 class="product-title">“There Goes That Man” Aged Dad Hat</h3>
               <p class="product-price">$45.00</p>
             </div>
           </div>
-
+        
           <div class="product-card">
-            <img src="images/BlackHoodie.png" alt="Black Hoodie" class="product-image" />
-          
+            <a href="https://selahclothing.co/products/there-goes-that-man-pullover-hoodie?_pos=5&_sid=0bb4998f3&_ss=r"
+               target="_blank" rel="noopener noreferrer">
+              <img src="images/BlackHoodie.png" alt="Black Hoodie" class="product-image" />
+            </a>
+        
             <div class="product-info">
               <h3 class="product-title">“There Goes That Man” Pullover Hoodie</h3>
               <p class="product-price">$125.00</p>
             </div>
           </div>
+        
+        </div>
+
       </section>
 
       <!-- Behind The Collection-->
@@ -99,7 +126,7 @@
         <img src="images/collaboration.png" alt="Group Standing" class="About-Img">
         <div class="About-Text">
           <H2>Behind the Collaboration</H2>
-          <p>Abbie reached out to Phillip Bowles at Selah Clothing Co, with her new single, There Goes That Man. The song emphasizes that trusting God brings healing to brokenness, transforms past pain, and continually works for the singer’s renewal and hope. The team at Selah jumped at the opportunity, excited to work with Abbie and create a collection that blended style with an emphasis on the proclamation of the gospel.</p>
+          <p>Abbie reached out to Phillip Bowles at Selah Clothing Co, with her new single, <br> There Goes That Man. The song emphasizes that trusting God brings healing to brokenness, transforms past pain, and continually works for the singer’s renewal and hope. The team at Selah jumped at the opportunity, excited to work with Abbie and create a collection that blended style with an emphasis on the proclamation of the gospel.</p>
         </div>
       </section>
 
@@ -107,14 +134,14 @@
       <section id="Links">
         <ul>
           <li>
-          <a href="https://music.apple.com/us/artist/abbie-gamboa/1479895581" class="link-row">
+          <a href="https://music.apple.com/us/artist/abbie-gamboa/1479895581" class="link-row" target="_blank" rel="noopener noreferrer">
             <h2>Listen to “There Goes That Man” by Abbie</h2>
             <img src="images/Arrow.png" alt="arrow" class="arrow">
           </a>
         </li>
       
         <li>
-          <a href="https://selahclothing.co/" class="link-row">
+          <a href="https://selahclothing.co/" class="link-row" target="_blank" rel="noopener noreferrer">
             <h2>More From Selah Collection Co.</h2>
             <img src="images/Arrow.png" alt="arrow" class="arrow">
           </a>
