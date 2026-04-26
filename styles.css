@@ -61,7 +61,7 @@ header {
 
 .side-nav a {
   font-family: "Fira Sans", sans-serif;
-  font-weight: 500; /* fix from 450 */
+  font-weight: 500;
   font-size: 24px;
   color: #47342f;
   text-decoration: none;
@@ -76,7 +76,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 40px 148px 80px 148px;
-  /*gap: 100px;*/
 }
 
 .mobile-menu {
@@ -654,34 +653,7 @@ footer {
     line-height: 105%;
     font-weight: 400;
   }
-  /*
-  #Links {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
-  #Links::before {
-    display: none;
-  }
-
-  .link-row {
-    width: 100%;
-    margin-bottom: 16px;
-  }
-
-  .link-row h2 {
-    font-size: 25px;
-    font-weight: 500;
-  }
-
-  .arrow {
-    width: 18px;
-  }
-*/
-
-  /*Bootstrapped Modified Code*/
   #Links {
     padding: 40px 20px 20px;
   }
@@ -692,23 +664,21 @@ footer {
 
   .link-row {
     width: 100%;
-    max-width: 320px; /* controls line length like screenshot */
-    margin: 0 auto 20px; /* centers the block */
+    max-width: 320px;
+    margin: 0 auto 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 16px;
   }
 
-  /* text styling */
   .link-row h2 {
     font-size: 22px;
     font-weight: 500;
     line-height: 1.2;
-    max-width: 260px; /* 🔑 prevents text from stretching */
+    max-width: 185px;
   }
 
-  /* arrow alignment */
   .arrow {
     width: 18px;
     flex-shrink: 0;
