@@ -3,13 +3,38 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
+
 html,
 body {
   margin: 0;
   padding: 0;
-  background: #f5ede0 url("images/Hero-Texture.png") no-repeat top center;
+  background: #f5ede0;
   background-size: cover;
+}
+
+h1 {
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1;
+  color: #47342f;
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-family: "Neuton", serif;
+  font-size: 34px;
+  line-height: 130%;
+  font-weight: 600;
+  color: #47342f;
+}
+
+header {
+  background: url("images/Hero-Texture.svg") no-repeat top center;
+  background-size: cover;
+  padding: 20px 0;
 }
 
 .nav-container {
@@ -54,18 +79,13 @@ body {
   /*gap: 100px;*/
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .hero-text {
   max-width: 520px;
   text-align: center;
-}
-
-.hero-text h1 {
-  font-family: "Neuton", serif;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 1;
-  color: #47342f;
-  margin-bottom: 28px;
 }
 
 .hero-text p {
@@ -145,19 +165,7 @@ body {
 }
 
 .FAQs h2 {
-  font-family: "Neuton", serif;
-  font-size: 34px;
-  line-height: 130%;
-  font-weight: 600;
   color: #f5ede0;
-}
-
-h2 {
-  font-family: "Neuton", serif;
-  font-size: 34px;
-  line-height: 130%;
-  font-weight: 600;
-  color: #47342f;
 }
 
 .FAQs p {
@@ -235,7 +243,6 @@ p {
   font-weight: 400px;
 }
 
-/* PRICE */
 .product-price {
   font-family: "Fira Sans", sans-serif;
   font-size: 20px;
@@ -281,8 +288,6 @@ p {
 .link-row {
   display: flex;
   align-items: center;
-  /*gap: 20px;
-  width: 100%;*/
   width: 54%;
   text-decoration: none;
   justify-content: space-between;
@@ -317,4 +322,465 @@ p {
 
   z-index: 0;
   pointer-events: none;
+}
+
+footer {
+  background-color: #f5ede0;
+  padding: 80px 148px;
+  font-family: Arial, sans-serif;
+  color: #47342f;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left {
+  max-width: 440px;
+}
+
+.newsletter-form label {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #7c7c7c;
+}
+
+.newsletter-form input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #4a4036;
+  background: transparent;
+  font-size: 16px;
+  margin-top: -30px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.disclaimer {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  line-height: 125%;
+  margin-bottom: 20px;
+}
+
+.newsletter-form button {
+  background-color: #f4be41;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 0;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.newsletter-form button h3 {
+  margin: 0;
+  color: #47342f;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.newsletter-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #4a4036;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.social-links img {
+  height: 36px;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer-bottom img {
+  width: 80px;
+}
+
+@media (max-width: 768px) {
+  .nav-container,
+  #hero-section,
+  #Details,
+  #Inside,
+  #Collection,
+  #About,
+  #Links,
+  footer {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  header {
+    background: url("images/Mobile-Hero-Texture.svg") no-repeat top center;
+    background-size: contain;
+    padding: 10px 0;
+  }
+
+  .side-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu img {
+    width: 34px;
+  }
+
+  .nav-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    left: 20px;
+  }
+
+  .nav-logo {
+    width: 66px;
+  }
+
+  .side-nav ul {
+    gap: 16px;
+  }
+
+  .side-nav a {
+    font-size: 14px;
+  }
+
+  .nav-logo {
+    width: 66px;
+  }
+
+  #hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+  }
+
+  .hero-img {
+    width: 348px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 24px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 112%;
+  }
+
+  .hero-btn {
+    font-size: 16px;
+    padding: 14px 0;
+    width: 348px;
+  }
+
+  #Details {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 20px;
+  }
+
+  #Details::before {
+    background: url("images/Mobile-Detail-Texture.svg") no-repeat top center;
+    background-size: contain;
+    top: -10px;
+    bottom: -10px;
+  }
+
+  #Details video {
+    width: 348px;
+    padding-top: 50px;
+  }
+
+  .FAQs {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .FAQs p {
+    line-height: 112%;
+  }
+
+  #Inside {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #Inside h2 {
+    font-size: 28px;
+    line-height: 130%;
+    padding-bottom: 8px;
+  }
+  #Inside p {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    line-height: 105%;
+    font-weight: 400;
+  }
+
+  #Collection {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .collection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #Collection h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  .RedArrow {
+    width: 18px;
+  }
+
+  /* I bootstrapped this side scrolling behavior, then modified it to work appropriatetly*/
+
+  .product-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+  }
+  .product-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-card {
+    flex: 0 0 160px;
+    text-align: center;
+    scroll-snap-align: start;
+  }
+
+  .product-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+
+  .product-title {
+    font-size: 15px;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .product-price {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  #About {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .About-Img {
+    width: 260px;
+    border-radius: 12px;
+  }
+
+  .About-Text {
+    max-width: 320px;
+  }
+
+  #About h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  #About p {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    line-height: 105%;
+    font-weight: 400;
+  }
+  /*
+  #Links {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #Links::before {
+    display: none;
+  }
+
+  .link-row {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .link-row h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .arrow {
+    width: 18px;
+  }
+*/
+
+  /*Bootstrapped Modified Code*/
+  #Links {
+    padding: 40px 20px 20px;
+  }
+
+  #Links::before {
+    display: none;
+  }
+
+  .link-row {
+    width: 100%;
+    max-width: 320px; /* controls line length like screenshot */
+    margin: 0 auto 20px; /* centers the block */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* text styling */
+  .link-row h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 260px; /* 🔑 prevents text from stretching */
+  }
+
+  /* arrow alignment */
+  .arrow {
+    width: 18px;
+    flex-shrink: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .footer-left {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .newsletter-form label {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .newsletter-form input {
+    font-size: 16px;
+  }
+
+  .disclaimer {
+    font-size: 12px;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .newsletter-form button {
+    padding: 16px 0;
+    border-radius: 999px;
+  }
+
+  .newsletter-form button h3 {
+    font-size: 16px;
+  }
+
+  .footer-right {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .footer-nav a {
+    font-size: 16px;
+  }
+
+  .social-links {
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .social-links img {
+    height: 32px;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+  }
+
+  .footer-bottom img {
+    width: 64px;
+  }
 }
